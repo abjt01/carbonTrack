@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CarbonTrack</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+</head>
+<body>
+    <div class="container">
+        <h1>CarbonTrack</h1>
+        <p>CO₂ Data Visualiser</p>
+
+        <h2>CO₂ Data (ppm)</h2>
+        <textarea id="dataBox">(sample_data)
+          
+Time: 2025-06-09 06:00:00 | CO₂ Level: 430 ppm
+Time: 2025-06-09 07:00:00 | CO₂ Level: 460 ppm
+Time: 2025-06-09 08:00:00 | CO₂ Level: 490 ppm
+Time: 2025-06-09 09:00:00 | CO₂ Level: 520 ppm
+Time: 2025-06-09 10:00:00 | CO₂ Level: 500 ppm
+Time: 2025-06-09 11:00:00 | CO₂ Level: 470 ppm
+Time: 2025-06-09 12:00:00 | CO₂ Level: 450 ppm
+Time: 2025-06-09 13:00:00 | CO₂ Level: 440 ppm
+Time: 2025-06-09 14:00:00 | CO₂ Level: 445 ppm
+Time: 2025-06-09 15:00:00 | CO₂ Level: 455 ppm
+Time: 2025-06-09 16:00:00 | CO₂ Level: 470 ppm
+Time: 2025-06-09 17:00:00 | CO₂ Level: 495 ppm
+Time: 2025-06-09 18:00:00 | CO₂ Level: 540 ppm
+Time: 2025-06-09 19:00:00 | CO₂ Level: 560 ppm
+Time: 2025-06-09 20:00:00 | CO₂ Level: 580 ppm
+Time: 2025-06-09 21:00:00 | CO₂ Level: 560 ppm
+Time: 2025-06-09 22:00:00 | CO₂ Level: 520 ppm
+Time: 2025-06-09 23:00:00 | CO₂ Level: 480 ppm
+Time: 2025-06-10 00:00:00 | CO₂ Level: 450 ppm
+Time: 2025-06-10 01:00:00 | CO₂ Level: 430 ppm
+Time: 2025-06-10 02:00:00 | CO₂ Level: 420 ppm
+Time: 2025-06-10 03:00:00 | CO₂ Level: 410 ppm
+Time: 2025-06-10 04:00:00 | CO₂ Level: 400 ppm
+Time: 2025-06-10 05:00:00 | CO₂ Level: 410 ppm
+Time: 2025-06-10 06:00:00 | CO₂ Level: 430 ppm
+Time: 2025-06-10 07:00:00 | CO₂ Level: 465 ppm
+Time: 2025-06-10 08:00:00 | CO₂ Level: 495 ppm
+Time: 2025-06-10 09:00:00 | CO₂ Level: 520 ppm
+Time: 2025-06-10 10:00:00 | CO₂ Level: 500 ppm
+Time: 2025-06-10 11:00:00 | CO₂ Level: 470 ppm</textarea>
+
+        <button id="showButton">Show Chart</button>
+
+        <div id="chartArea">
+            <h3>CO₂ Level (ppm) vs Time</h3>
+            <div class="chartBox">
+              <canvas id="myChart"></canvas>
+            </div>
+        </div>
+
+        <div id="summaryArea">
+            <h3>Summary</h3>
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
